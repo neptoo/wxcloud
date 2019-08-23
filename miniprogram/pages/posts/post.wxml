@@ -1,0 +1,19 @@
+<import src="post-item/post-item-template.wxml" />
+<view>
+    <swiper indicator-dots="true" autoplay="true" interval="3000" catchtap="onSwiperTap">
+        <swiper-item>
+            <image src="https://images.pexels.com/photos/2236703/pexels-photo-2236703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-postId="1"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="https://images.pexels.com/photos/2616342/pexels-photo-2616342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-postId="2"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="https://images.pexels.com/photos/1292115/pexels-photo-1292115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-postId="4"></image>
+        </swiper-item>
+    </swiper>
+    <block wx:for="{{ postList }}" wx:for-item="item" wx:key="title">
+        <view catchtap="onPostTap" data-postId="{{ item.postId }}">
+            <template is="postItem" data="{{...item}}" />
+        </view>
+    </block>
+</view>

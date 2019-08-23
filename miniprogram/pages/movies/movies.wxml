@@ -1,0 +1,3 @@
+<view class='movie' wx:for="{{movieList}}" wx:key="{{index}}">
+  <view class="movie-info">{{item.title}}</view>
+</view>

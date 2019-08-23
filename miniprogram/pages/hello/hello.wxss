@@ -1,0 +1,45 @@
+.container{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	/*background-color: #b3d4db;*/
+	/*not fullscreen,h not defined*/
+}
+
+page{
+	height: 100%;
+	background-color: #b3d4db;
+}
+
+.userImg{
+	width: 180rpx; 
+	height: 250rpx;
+	margin-top: 160rpx;
+	border-radius: 70%;
+}
+
+.userName{
+	font-size: 32rpx;
+	font-weight: 600;
+	margin-top: 100rpx;
+	color: #666;
+}
+
+.moto{
+	font-size: 24rpx;
+	font-weight: 600;
+	line-height: 80rpx;
+	color: #405f80;
+}
+
+.motoContainer{
+	border: 1px solid #405f80;
+	width: 200rpx;
+	height: 80rpx;
+	border-radius: 5rpx;
+	text-align: center;
+	margin-top: 200rpx;
+}

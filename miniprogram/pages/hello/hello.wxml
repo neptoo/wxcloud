@@ -1,0 +1,7 @@
+<view class="container">
+    <image src="https://i.loli.net/2019/07/22/5d35307e321b622366.jpg" class="userImg" mode="aspectFill"></image>
+    <text class="userName">Hello，Boys & Girls</text>
+    <view class="motoContainer" bindtap="onTap">
+        <text class="moto" >开启小程序之旅</text>
+    </view>
+</view>

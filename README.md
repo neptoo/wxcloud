@@ -8,6 +8,8 @@
 
 ![post-detail](https://raw.githubusercontent.com/neptoo/wxcloud/master/views/3.png)
 
+![movies](https://raw.githubusercontent.com/neptoo/wxcloud/master/views/4.png)
+
 
 ## 参考文档
 

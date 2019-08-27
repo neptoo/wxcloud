@@ -1,3 +1,11 @@
 <view class='movie' wx:for="{{movieList}}" wx:key="{{index}}">
-  <view class="movie-info">{{item.title}}</view>
+  <image class="movie-img" src="{{item.images.small}}"></image>
+  <view class="movie-info">
+    <view class="movie-title">{{item.title}}</view>
+    <view><text class="movie-item">豆瓣评分: </text><text class="movie-score">{{item.rating.average}}分</text></view>
+    <view>
+      <text class="movie-item">主演: </text><text wx:for="{{item.casts}}" wx:key="{{index}}">{{item.name}} </text>
+    </view>
+    <view><text class="movie-item">上映日期: </text><text>{{item.mainland_pubdate}}</text></view>
+  </view>
 </view>
